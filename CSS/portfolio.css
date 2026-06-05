@@ -1,0 +1,336 @@
+/*
+    portfolio.css
+    External stylesheet for Luban Mahdi Interactive
+    Assessment 4 - Introduction to the Web
+    Author: Luban Mahdi
+    Date: 05 June 2026
+*/
+
+/* General page design */
+body {
+    background-color: #0f1923;
+    color: #ece8e1;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header section */
+header {
+    background-color: #111111;
+    color: #ece8e1;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #ff4655;
+}
+
+/* Logo design */
+.logo {
+    width: 170px;
+    height: auto;
+    border: 2px solid #ff4655;
+    border-radius: 8px;
+    background-color: #d9d9d9;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.4em;
+    color: #ece8e1;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ff4655;
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #ece8e1;
+    font-style: italic;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #0b0f14;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #ff4655;
+}
+
+/* CSS button navigation */
+nav a {
+    color: #ece8e1;
+    background-color: #1b2733;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 13px;
+    margin: 4px;
+    display: inline-block;
+    border: 1px solid #ff4655;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #ffffff;
+    background-color: #ff4655;
+}
+
+/* Main page content */
+main {
+    background-color: #15202b;
+    width: 86%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #263645;
+}
+
+/* Footer section */
+footer {
+    background-color: #111111;
+    color: #ece8e1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+    border-top: 3px solid #ff4655;
+}
+
+/* Links */
+main a,
+footer a {
+    color: #ff4655;
+    font-weight: bold;
+}
+
+main a:hover,
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Text helpers */
+.highlight {
+    color: #ff4655;
+    font-weight: bold;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+/* Content boxes */
+#welcome-box,
+.info-box,
+.skill-box,
+.resume-box,
+.form-box {
+    background-color: #1b2733;
+    border-left: 5px solid #ff4655;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Images */
+.page-image {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 2px solid #ff4655;
+    border-radius: 8px;
+}
+
+/* Media */
+.media-box {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 15px auto;
+    border: 2px solid #ff4655;
+    border-radius: 8px;
+    background-color: #0b0f14;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+/* Resume table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ff4655;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0b0f14;
+    color: #ff4655;
+}
+
+td {
+    background-color: #1b2733;
+    color: #ece8e1;
+}
+
+/* Form design */
+form {
+    background-color: #1b2733;
+    border: 1px solid #ff4655;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #ece8e1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ff4655;
+    border-radius: 4px;
+    background-color: #0f1923;
+    color: #ece8e1;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Form buttons */
+input[type="submit"],
+input[type="reset"],
+.button-link {
+    background-color: #ff4655;
+    color: #ffffff;
+    border: none;
+    padding: 11px 18px;
+    margin: 8px 5px 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button-link:hover {
+    background-color: #ffffff;
+    color: #ff4655;
+}
+
+/* Small note text */
+.small-note {
+    font-size: 0.9em;
+    color: #bfc8d1;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    main {
+        width: 92%;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 6px auto;
+        width: 80%;
+    }
+
+    .logo {
+        width: 140px;
+    }
+}
+
+/* Print friendly CSS from A3, still working in A4 */
+@media print {
+    nav {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        font-size: 14pt;
+    }
+
+    header,
+    footer {
+        background-color: white;
+        color: black;
+        border: none;
+    }
+
+    main {
+        background-color: white;
+        color: black;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    td,
+    th,
+    label {
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .logo,
+    .page-image,
+    .media-box {
+        display: none;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    th,
+    td {
+        background-color: white;
+        color: black;
+    }
+}
