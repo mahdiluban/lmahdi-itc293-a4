@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Newsletter signup form page for Assessment 4 -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Newsletter signup form for Luban Mahdi Interactive.">
+    <meta name="keywords" content="newsletter signup, form, JavaScript validation">
+    <meta name="author" content="Luban Mahdi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luban Mahdi Interactive - Newsletter Signup</title>
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="icon" href="Images/logo.png">
+    <script src="JavaScript/form_validation.js"></script>
+</head>
+
+<body onload="showWelcomeMessage()">
+    <header>
+        <img src="Images/logo.png" alt="Luban Mahdi Interactive Logo" class="logo">
+        <h1>Newsletter Signup</h1>
+        <p class="center-text">Join the Luban Mahdi Interactive gaming community</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lmahdi_A4_resume.html">Resume</a>
+        <a href="lmahdi_A4_web_development.html">Web Development</a>
+        <a href="lmahdi_A4_ui_design.html">UI Design</a>
+        <a href="lmahdi_A4_database.html">Database</a>
+        <a href="lmahdi_A4_cybersecurity.html">Cybersecurity</a>
+        <a href="lmahdi_A4_javascript.html">JavaScript</a>
+    </nav>
+
+    <main>
+        <div class="form-box">
+            <h2>Welcome to the Luban Mahdi Interactive Newsletter Signup</h2>
+            <p>
+                Please complete the required information below to sign up for updates about games, events,
+                platform news and community features.
+            </p>
+            <p class="small-note">Required data: First Name, Last Name, and Email Address.</p>
+        </div>
+
+        <form action="https://httpbin.org/post" method="post" onsubmit="return validateSignupForm()">
+            <h2>Signup Form</h2>
+
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" maxlength="60"><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" maxlength="60"><br>
+
+            <label for="emailAddress">Email Address:</label><br>
+            <input type="email" id="emailAddress" name="emailAddress" maxlength="60" required><br>
+
+            <h3>Age Range</h3>
+            <input type="radio" id="age15" name="ageRange" value="15-25">
+            <label for="age15">15-25</label><br>
+
+            <input type="radio" id="age26" name="ageRange" value="26-35">
+            <label for="age26">26-35</label><br>
+
+            <input type="radio" id="age36" name="ageRange" value="36-45">
+            <label for="age36">36-45</label><br>
+
+            <input type="radio" id="age46" name="ageRange" value="46-55">
+            <label for="age46">46-55</label><br>
+
+            <input type="radio" id="age55" name="ageRange" value="55+">
+            <label for="age55">55+</label><br>
+
+            <h3>Gaming Services of Interest</h3>
+            <input type="checkbox" id="service1" name="services" value="Competitive Gaming">
+            <label for="service1">Competitive Gaming</label><br>
+
+            <input type="checkbox" id="service2" name="services" value="Game Tournaments">
+            <label for="service2">Game Tournaments</label><br>
+
+            <input type="checkbox" id="service3" name="services" value="Player Community">
+            <label for="service3">Player Community</label><br>
+
+            <input type="checkbox" id="service4" name="services" value="Game News">
+            <label for="service4">Game News</label><br>
+
+            <input type="checkbox" id="service5" name="services" value="Beta Testing">
+            <label for="service5">Beta Testing</label><br>
+
+            <h3>Comments</h3>
+            <label for="comments">Tell us what gaming updates you are interested in:</label><br>
+            <textarea id="comments" name="comments" cols="60" rows="3"></textarea><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer>
+        <p>Email: <a href="mailto:mahdiluban@gmail.com">mahdiluban@gmail.com</a></p>
+        <p>Phone: <a href="tel:+61470208136">0470 208 136</a></p>
+        <p>&copy; 2026 Luban Mahdi Interactive &amp; Luban Mahdi. I am the copyright holder of all content used on this website.</p>
+    </footer>
+</body>
+</html>
